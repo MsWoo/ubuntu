@@ -1,8 +1,20 @@
 import React from 'react';
 import './App.css';
 import userList from './userList';
+import { mean, stddev } from './es6-export';
+import stat from './es6-export-default';
 
 const Hello = () => {
+  let mea = mean([1, 3, 5, 7, 9]); // => 5
+  let std = stddev([1, 3, 5, 7, 9]); // => Math.sqrt(10)
+  console.log(mea);
+  console.log(std);
+
+  console.log(stat);
+  mea = stat.mean([1, 3, 5, 7, 9]); // => 5
+  std = stat.stddev([1, 3, 5, 7, 9]); // => Math.sqrt(10)
+  console.log(mea);
+  console.log(std);
   return (
     <div>
       <div className='App'>
