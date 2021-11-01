@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/coins",
+      "lambdaFunction": "mscryptofunc",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/coins"
+    }
+  ],
+  "resourceName": "mscryptoapi",
+  "apiName": "mscryptoapi",
+  "functionArns": [
+    {
+      "lambdaFunction": "mscryptofunc"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-mscrypto-dev-142255-authRole",
+    "unAuthRoleName": "amplify-mscrypto-dev-142255-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "mscryptofunc",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
