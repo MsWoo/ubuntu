@@ -9,7 +9,7 @@ function App() {
   const [input, updateInput] = useState({ limit: 5, start: 0 });
   // Define function to all API
   async function fetchCoins() {
-    const data = await API.get('cryptoapi', '/coins');
+    const data = await API.get('mscryptoapi', '/coins');
     updateCoins(data.coins);
   }
   // Create a new function to allow users to update the input values
