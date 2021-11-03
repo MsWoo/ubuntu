@@ -15,7 +15,7 @@
       "function": {
         "mscryptofunc": {
           "deploymentBucketName": "amplify-mscrypto-dev-142255-deployment",
-          "s3Key": "amplify-builds/mscryptofunc-4d70756f75425455436f-build.zip"
+          "s3Key": "amplify-builds/mscryptofunc-5a614a654e556d543869-build.zip"
         }
       }
     }

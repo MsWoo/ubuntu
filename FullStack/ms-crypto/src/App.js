@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className='App'>
-      {/* <input
+      <input
         onChange={(e) => updateInputValues('limit', e.target.value)}
         placeholder='limit'
       />
@@ -32,7 +32,7 @@ function App() {
         placeholder='start'
         onChange={(e) => updateInputValues('start', e.target.value)}
       />
-      <button onClick={fetchCoins}>Fetch Coins</button> */}
+      <button onClick={fetchCoins}>Fetch Coins</button>
       {coins.map((coin, index) => (
         <div key={index}>
           <h2>
