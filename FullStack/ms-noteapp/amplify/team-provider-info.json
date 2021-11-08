@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-msnoteapp-dev-131744-authRole",
+      "UnauthRoleArn": "arn:aws:iam::819462472395:role/amplify-msnoteapp-dev-131744-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::819462472395:role/amplify-msnoteapp-dev-131744-authRole",
+      "Region": "ap-northeast-2",
+      "DeploymentBucketName": "amplify-msnoteapp-dev-131744-deployment",
+      "UnauthRoleName": "amplify-msnoteapp-dev-131744-unauthRole",
+      "StackName": "amplify-msnoteapp-dev-131744",
+      "StackId": "arn:aws:cloudformation:ap-northeast-2:819462472395:stack/amplify-msnoteapp-dev-131744/d505d6d0-404a-11ec-a182-06efbcda35f2",
+      "AmplifyAppId": "d18tz0b4nes8qj"
+    }
+  }
+}
