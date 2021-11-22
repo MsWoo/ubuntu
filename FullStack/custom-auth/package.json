@@ -1,5 +1,5 @@
 {
-  "name": "list-user",
+  "name": "custom-auth",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
