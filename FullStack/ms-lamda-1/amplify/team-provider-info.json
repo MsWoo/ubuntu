@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mslamda1-dev-10103-authRole",
+      "UnauthRoleArn": "arn:aws:iam::819462472395:role/amplify-mslamda1-dev-10103-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::819462472395:role/amplify-mslamda1-dev-10103-authRole",
+      "Region": "ap-northeast-2",
+      "DeploymentBucketName": "amplify-mslamda1-dev-10103-deployment",
+      "UnauthRoleName": "amplify-mslamda1-dev-10103-unauthRole",
+      "StackName": "amplify-mslamda1-dev-10103",
+      "StackId": "arn:aws:cloudformation:ap-northeast-2:819462472395:stack/amplify-mslamda1-dev-10103/68b53320-5064-11ec-bf34-0622224b62aa",
+      "AmplifyAppId": "d15io9ewih01f"
+    },
+    "categories": {
+      "auth": {
+        "mslamda1e4a34ba2": {}
+      }
+    }
+  }
+}
