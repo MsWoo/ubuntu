@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "mslamda1e4a34ba2_identitypool_e4a34ba2",
+    "identityPoolName": "mslamda1929b0b0b_identitypool_929b0b0b",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "mslamde4a34ba2",
-    "userPoolName": "mslamda1e4a34ba2_userpool_e4a34ba2",
+    "resourceNameTruncated": "mslamd929b0b0b",
+    "userPoolName": "mslamda1929b0b0b_userpool_929b0b0b",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -29,10 +29,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "mslamde4a34ba2_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "mslamd929b0b0b_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "e4a34ba2",
-    "resourceName": "mslamda1e4a34ba2",
+    "sharedId": "929b0b0b",
+    "resourceName": "mslamda1929b0b0b",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -47,14 +47,27 @@
         ]
     },
     "useDefault": "default",
-    "triggers": "{}",
+    "triggers": "{\n  \"PostConfirmation\": [\n    \"add-to-group\"\n  ]\n}",
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
     "parentStack": {
         "Ref": "AWS::StackId"
     },
+    "authTriggerConnections": "[\n  {\n    \"triggerType\": \"PostConfirmation\",\n    \"lambdaFunctionName\": \"mslamda1929b0b0bPostConfirmation\"\n  }\n]",
     "breakCircularDependency": true,
-    "permissions": [],
-    "dependsOn": []
+    "permissions": [
+        "{\n  \"policyName\": \"AddToGroupCognito\",\n  \"trigger\": \"PostConfirmation\",\n  \"effect\": \"Allow\",\n  \"actions\": [\n    \"cognito-idp:AdminAddUserToGroup\",\n    \"cognito-idp:GetGroup\",\n    \"cognito-idp:CreateGroup\"\n  ],\n  \"resource\": {\n    \"paramType\": \"!GetAtt\",\n    \"keys\": [\n      \"UserPool\",\n      \"Arn\"\n    ]\n  }\n}"
+    ],
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "mslamda1929b0b0bPostConfirmation",
+            "triggerProvider": "Cognito",
+            "attributes": [
+                "Arn",
+                "Name"
+            ]
+        }
+    ]
 }
