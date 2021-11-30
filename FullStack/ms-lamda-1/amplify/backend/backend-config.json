@@ -4,6 +4,11 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    },
+    "S3Trigger8606a35a": {
+      "service": "Lambda",
+      "providerPlugin": "awscloudformation",
+      "build": true
     }
   },
   "auth": {
@@ -41,6 +46,23 @@
           "EMAIL"
         ]
       }
+    }
+  },
+  "storage": {
+    "mslamdas3": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "S3Trigger8606a35a",
+          "attributes": [
+            "Name",
+            "Arn",
+            "LambdaExecutionRole"
+          ]
+        }
+      ]
     }
   }
 }

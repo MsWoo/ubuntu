@@ -17,6 +17,10 @@
           "GROUP": "Admin",
           "deploymentBucketName": "amplify-mslamda1-dev-120850-deployment",
           "s3Key": "amplify-builds/mslamda1929b0b0bPostConfirmation-7a415057514e3672512b-build.zip"
+        },
+        "S3Trigger8606a35a": {
+          "deploymentBucketName": "amplify-mslamda1-dev-120850-deployment",
+          "s3Key": "amplify-builds/S3Trigger8606a35a-756842386974366d364b-build.zip"
         }
       },
       "auth": {
