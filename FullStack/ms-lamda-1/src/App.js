@@ -30,6 +30,21 @@ function App() {
   }
   return (
     <div className='App'>
+      <div className='Myprofile'>
+        <h1 style={{ marginLeft: 30 }}>우민수</h1>
+        <h2 style={{ marginLeft: 30 }}>컴퓨터전자시스템공학부</h2>
+        <h3 style={{ marginLeft: 30 }}>
+          해당 프로젝트는 사용자가 Image를 업로드하면 Trigger가 작동하여 Image를
+          Resize해서 AWS S3에 업로드합니다. <br /> 반대로 AWS S3에 Image를
+          업로드해도 웹페이지에 반영됩니다.
+        </h3>
+        <h3 style={{ marginLeft: 30 }}>
+          In the project, when a user uploads an image file, a trigger works,
+          resizes the image and uploads it to AWS S3. <br /> Conversely, even if
+          you upload an image to S3, it will be resized and reflected on the web
+          page.
+        </h3>
+      </div>
       <header className='App-header'>
         <input type='file' onChange={onChange} />
         {images.map((image) => (
