@@ -1,12 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import { Storage } from 'aws-amplify';
 import { v4 as uuid } from 'uuid';
+import { Auth } from 'aws-amplify';
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import './App.css';
 function App() {
   const [images, setImages] = useState([]);
   useEffect(() => {
     fetchImages();
   }, []);
+  //---------------------------------------
+  // const [user, setUser] = useState({});
+  // async function checkUser() {
+  //   try {
+  //     const data = await Auth.currentUserPoolUser();
+  //     const userInfo = { username: data.username, ...data.attributes };
+  //     setUser(userInfo);
+  //   } catch (err) {
+  //     console.log('error: ', err);
+  //   }
+  // }
+  //----------------------------------------
   async function onChange(e) {
     /* When a file is uploaded, create a unique name and save it using the Storage API */
     const file = e.target.files[0];
@@ -54,4 +68,4 @@ function App() {
     </div>
   );
 }
-export default App;
+export default withAuthenticator(App);
