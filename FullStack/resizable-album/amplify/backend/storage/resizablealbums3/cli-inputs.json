@@ -1,0 +1,18 @@
+{
+  "resourceName": "resizablealbums3",
+  "policyUUID": "5967ecab",
+  "bucketName": "resizablealbum54143b9169e340c3852f7d148311998b",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "S3Triggere037cb73",
+  "groupAccess": {}
+}
