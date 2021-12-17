@@ -19,7 +19,7 @@
       "function": {
         "S3Triggere037cb73": {
           "deploymentBucketName": "amplify-resizablealbum-dev-150529-deployment",
-          "s3Key": "amplify-builds/S3Triggere037cb73-4575735833616c395074-build.zip"
+          "s3Key": "amplify-builds/S3Triggere037cb73-754f335749323330474f-build.zip"
         }
       }
     }

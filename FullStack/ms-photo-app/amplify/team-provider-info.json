@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "msphotoapp1e0f48c2": {}
+      },
+      "function": {
+        "S3Trigger7d146ed6": {
+          "deploymentBucketName": "amplify-msphotoapp-dev-123112-deployment",
+          "s3Key": "amplify-builds/S3Trigger7d146ed6-4668752b344643745255-build.zip"
+        }
       }
     }
   }

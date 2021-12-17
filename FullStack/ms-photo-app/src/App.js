@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div style={container}>
-      <h1>Photo App</h1>
+      <h1>컴전학부_우민수_PhotoAlbum</h1>
       <Radio.Group
         value={viewState}
         onChange={(e) => updateViewState(e.target.value)}

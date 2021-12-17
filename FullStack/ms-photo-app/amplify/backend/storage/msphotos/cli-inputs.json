@@ -1,0 +1,14 @@
+{
+  "resourceName": "msphotos",
+  "policyUUID": "a2b71699",
+  "bucketName": "msphotos",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "S3Trigger7d146ed6",
+  "groupAccess": {}
+}

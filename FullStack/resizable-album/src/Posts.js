@@ -31,15 +31,15 @@ function Posts() {
   useEffect(() => {
     fetchPosts();
 
-    // const subscription = API.graphql(graphqlOperation(onCreatePost)).subscribe({
-    //   next: async (post) => {
-    //     const newPost = post.value.data.onCreatePost;
-    //     const signedUrl = await Storage.get(newPost.imageKey);
-    //     newPost.imageUrl = signedUrl;
-    //     dispatch({ type: 'ADD_POST', post: newPost });
-    //   },
-    // });
-    // return () => subscription.unsubscribe();
+    const subscription = API.graphql(graphqlOperation(onCreatePost)).subscribe({
+      next: async (post) => {
+        const newPost = post.value.data.onCreatePost;
+        const signedUrl = await Storage.get(newPost.imageKey);
+        newPost.imageUrl = signedUrl;
+        dispatch({ type: 'ADD_POST', post: newPost });
+      },
+    });
+    return () => subscription.unsubscribe();
   }, []);
 
   async function fetchPosts() {
